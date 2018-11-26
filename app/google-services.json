@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "426799569113",
+    "firebase_url": "https://travelmemoir-e9ccf.firebaseio.com",
+    "project_id": "travelmemoir-e9ccf",
+    "storage_bucket": "travelmemoir-e9ccf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426799569113:android:a92a65c37d7f6684",
+        "android_client_info": {
+          "package_name": "com.example.ritamartiniano.travelmemoir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426799569113-rah0ncbs07q2s5htndr4p369ut8503dt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ritamartiniano.travelmemoir",
+            "certificate_hash": "1d181798fd5850f289b96f687abd0e84a653bafd"
+          }
+        },
+        {
+          "client_id": "426799569113-9jr3nn3jgkdaasndruejc8uhl8hknpni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAArKUYOSZRqBi-gEGAGpmHprXu_x-6Pho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426799569113-9jr3nn3jgkdaasndruejc8uhl8hknpni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

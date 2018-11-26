@@ -1,0 +1,61 @@
+{
+    "users":{
+
+        "user2":
+        { 
+            "username":"rita_martini",
+            "name": "Rita Martini",
+            "journals":{
+                "journal1":true
+
+            }
+        },
+        "user1":
+        {
+          "username":"johnsmith",
+          "name":"John Smith",
+          "journals":{
+              "journal2":true
+          }
+        }
+
+    },
+    "journals":
+    {  
+      "journal1":
+      {
+          "description":"Good time in LA",
+          "Name":"LA with friends",
+          "Start-Date":"somedate",
+          "End-Date":"somedate",
+          "posts":{
+              "post1":true
+          }
+
+      },
+      "journal2":
+      {
+          "description":"Good time in New York",
+          "Name":"New York with friends",
+          "Start-Date":"somedate",
+          "End-Date":"somedate"
+
+      }
+    },
+    "posts":
+    {
+      "post1":
+      {
+          "description":"Where i got breakfast",
+          "Name":"New place"
+
+      },
+      "post2":
+      {
+        "Name":"During afternoon",
+        "description":"Madame Tussauds",
+        "multimedia":
+        
+      }
+    }
+}
