@@ -111,8 +111,8 @@ public class SignIn extends AppCompatActivity {
             newUser = new User();
             newUser.setName(ds.child(UserID).getValue(User.class).getName());
             newUser.setUsername(ds.child(UserID).getValue(User.class).getUsername());
-
-
+            Intent mainPage = new Intent(SignIn.this,MainActivity.class);
+            SignIn.this.startActivity(mainPage);
             Log.d(TAG, "retrieveData: name" + newUser.getName());
             Log.d(TAG, "retrieveData: username" + newUser.getUsername());
         }
