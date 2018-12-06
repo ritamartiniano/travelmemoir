@@ -19,11 +19,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.security.spec.ECField;
 
 public class SignIn extends AppCompatActivity {
 
@@ -76,24 +75,9 @@ public class SignIn extends AppCompatActivity {
              public void onComplete(@NonNull Task<AuthResult> task) {
                  if(task.isSuccessful())
                  {
-                     Log.d(TAG, "signInWithEmail:success");
-                     FirebaseUser user = mAuth.getCurrentUser();
-                     UserID = user.getUid();
                      Toast.makeText(SignIn.this,"Authenticaton Success", Toast.LENGTH_SHORT).show();
-                     final DatabaseReference currentUser = FirebaseDatabase.getInstance().getReference().child("Users");
-                    
-                     currentUser.addValueEventListener(new ValueEventListener() {
-                         @Override
-                         public void onDataChange(@NonNull DataSnapshot ds) {
-                             retrieveData(ds);
-                         }
-                         
-                         @Override
-                         public void onCancelled(@NonNull DatabaseError databaseError) {
-                             System.out.println("The read failed: " + databaseError.getCode());
-                         }
-                     });
-
+                     Intent mainPage = new Intent(SignIn.this, MainActivity.class);
+                     SignIn.this.startActivity(mainPage);
                  }
                  else
                  {
@@ -105,20 +89,7 @@ public class SignIn extends AppCompatActivity {
          });
      }
     }
-    private void retrieveData(DataSnapshot ds)
-    {
-        for (DataSnapshot dataSnapshot : ds.getChildren()) {
-            newUser = new User();
-            newUser.setName(ds.child(UserID).getValue(User.class).getName());
-            newUser.setUsername(ds.child(UserID).getValue(User.class).getUsername());
-            Intent mainPage = new Intent(SignIn.this,MainActivity.class);
-            SignIn.this.startActivity(mainPage);
-            Log.d(TAG, "retrieveData: name" + newUser.getName());
-            Log.d(TAG, "retrieveData: username" + newUser.getUsername());
-        }
 
-
-    }
     public boolean validateSignIn(String Email, String Password)
     {   boolean validated = true;
         if(TextUtils.isEmpty(Email))
