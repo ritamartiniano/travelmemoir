@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_destroy"
+        android:id="@+id/destroy"
+        android:title="@string/destroy"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:icon="@drawable/ic_create"
+        android:id="@+id/create"
+        android:title="@string/create"
+        app:showAsAction="always">
+    </item>
+</menu>

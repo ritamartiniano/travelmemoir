@@ -12,13 +12,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TextView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
+import com.example.ritamartiniano.travelmemoir.Fragments.FeedFragment;
+import com.example.ritamartiniano.travelmemoir.Fragments.ProfileFragment;
+import com.example.ritamartiniano.travelmemoir.Fragments.SearchFragment;
 
 //Note
 //For writing less lines of code when opening a new activity on setonclicklitener for buttons
@@ -74,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.newJournal:
+                Intent intent = new Intent(MainActivity.this, CreateJournal.class);
+                MainActivity.this.startActivity(intent);
                 break;
             case R.id.newPost:
                 break;

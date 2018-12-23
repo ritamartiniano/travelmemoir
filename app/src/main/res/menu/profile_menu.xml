@@ -14,7 +14,7 @@
       android:id="@+id/take_photo"
       android:icon="@drawable/ic_photo"
       app:showAsAction="always"
-      android:title="@string/take_pht">
+      android:title="@string/take_photo">
 
   </item>
 

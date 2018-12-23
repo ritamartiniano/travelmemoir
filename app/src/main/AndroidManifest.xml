@@ -3,10 +3,14 @@
     package="com.example.ritamartiniano.travelmemoir">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.camera"
-        android:required="false"></uses-feature>
-    //setting it to false makes google play to allow devices without a camera to download the application
-    //its required to check the availability of the camera at runtime by calling hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY)
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    //setting it to false makes google play to allow devices without a camera to download the
+    //application
+    //its required to check the availability of the camera at runtime by calling
+    //hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY)
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,8 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".SignIn" />
+        <activity android:name=".CreateJournal" />
+        <activity android:name=".create_post"></activity>
     </application>
 
 </manifest>

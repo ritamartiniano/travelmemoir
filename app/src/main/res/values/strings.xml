@@ -2,12 +2,32 @@
     <string name="app_name">Travel Memoir</string>
     <string name="main_page_title">Login</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="username">username</string>
+    <string name="username">Username</string>
     <string name="search">Search</string>
     <string name="feed">Feed</string>
-    <string name="todo">TODO</string>
-    <string name="new_journal">New Journal</string>
     <string name="new_post">New Post</string>
-    <string name="take_pht">Take Pht</string>
     <string name="profilepic">profilePic</string>
+    <string name="title">Title</string>
+    <string name="todo">TODO</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="describe_your_trip">Describe your trip!</string>
+    <string name="destination">Destination</string>
+    <string name="journal_name">Journal Name</string>
+    <string name="new_journal">New Journal</string>
+    <string name="date_of_travel">Date of Travel</string>
+    <string name="place_of_travel">Place of Travel</string>
+    <string name="destroy">Destroy</string>
+    <string name="create">Create</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_a_user_sign_in">Already a user? Log In</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Login</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="description">Description</string>
+    <string name="post_name">Post Name</string>
+    <string name="click_here_to_add_photo">Click here to add photo</string>
+
+
 </resources>
